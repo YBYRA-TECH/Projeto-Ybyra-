@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estilo Banco Inter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Inter', sans-serif;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      overflow-y: scroll;
+    }
+
+    section {
+      position: relative;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .sec1 img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .sec1 .texto {
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      max-width: 700px;
+    }
+
+    .sec1 .texto h1 {
+      font-size: 2.5rem;    
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .sec2 {
+  background-image: url('.');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+    .sec1 .texto p {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+
+    .sec2 {
+      background: #f4f4f4;
+      color: #222;
+      flex-direction: column;
+    }
+
+    .sec2 h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .sec2 a {
+      color: #ff6600;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="sec1">
+    <img src="Section 2.png" alt="Imagem de fundo">
+    <div class="texto">
+      <h1>Toda produção eficiente começa<br>com um ambiente inteligente</h1>
+      <p>
+        Transforme os dados da área de produção em <strong>resumos inteligentes</strong>, gerencie relatórios e planilhas.<br>
+        Obtenha <strong>retornos personalizados</strong> e <strong>sugestões de melhoria práticas</strong> com o nosso aplicativo.
+      </p>
+    </div>
+  </section>
+
+  <section class="sec2">
+    <h2>Inserção de Dados</h2>
+    <a href="#">Saiba como funciona →</a>
+  </section>
+
+</body>
+</html>
+

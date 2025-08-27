@@ -1,140 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
-* {
-    font-family: 'Lexend Giga';
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* Lexend Giga */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@400;700&display=swap');
 
-html, body {
-    height: 100%;
+/* Geologica */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&display=swap');
+
+*{
     margin: 0;
     padding: 0;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+}
+html,body{
     overflow-x: hidden;
 }
+footer {
+    display: grid;
+    grid-template-areas: 
+        "col1 col2 col3"
+        "direitos direitos direitos";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #081F38;
+}
+footer section{
+    margin-top: 50px;
+    margin-left: 95px;
+}
+.direitos{
+    grid-area: direitos;
+    margin-right: 100px;
+    margin-top: -30px;
+    text-align: center;
+    font-size: 19px;
+}
+footer .col1 {
+    grid-area: col1;
+}
+footer p{
+    margin-top: 15px;
+}
+footer .col2 {
+    grid-area: col2;
+}
 
-header {
+footer .col3 {
+    grid-area: col3;
+}
+footer p{
+    font-size: 18px;
+}
+footer h3{
+    font-size: 22px;
+}
+footer p,h3{
+    color: aliceblue;
+}
+p{
+    font-family: 'Geologica' sans-serif;
+}
+header{
     position: sticky;
-    top: 0;
-    height: 8vh;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
-    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 9px;
     padding: 7px 40px;
 }
-
-#sec1, .sec2, .sec3, .sec4, .sec5 {
-    height: 100vh;
-    margin: 0;
-    scroll-snap-align: start;
-    display: flex;
-    align-items: center;
-}
-
-#sec1 {
-    background-color: #fdfdfd;
-}
-
-.sec2 {
-    background-image: url('./imgs/Section 2.png');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-}
-.sec3{
-    background-image: url('./imgs/Section 3.png');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    justify-content:center ;
-    flex-direction: column;
-}
-.sec4{
-    background-image: url('./imgs/Section 4.png');
-    background-size: cover;
-    justify-content: right;
-    background-position: center;
-    color: white;
-}
-sec
-.texto {
-    
-    text-align: left;
-    margin-left: 40px;
-}
-
-.texto h1 {
-    font-size: 40px;
-    color: #2a4560;
-    margin-bottom: 30px;
-}
-
-strong {
-    color: #2a4560;
-}
-
-.texto p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-}
-
-#sec1 img {
-    width: 600px;
-}
-
-a {
-    font-size: 16px;
-    color: black;
+a{
+    font-family:'Lexend Giga', sans-serif;
     text-decoration: none;
+    color: black;
 }
-
-button {
-    background-color: #365576;
+button{
+    background-color: #004CC5;
     border: none;
-    border-radius: 15px;
-    width: 230px;
-    padding: 8px;
-}
-
-footer {
-    background-color: #0f0f0f;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    bottom: 0;
-}
-
-.footerTRes {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
-
-.footerTRes section {
-    min-width: 200px;
-}
-
-.footerTRes h2,
-.footerTRes h1 {
-    font-size: 19px;
-    margin-bottom: 10px;
-}
-
-.footerTRes p {
-    font-size: 16px;
-    color: #ccc;
-}
-
-footer h3 {
-    font-size: 15px;
-    color: #aaa;
+    color: aliceblue;
+    border-radius: 12px;
+    padding: 16px;
 }
